@@ -178,7 +178,7 @@ body {
   background: var(--body-bg-color);
   color: var(--text-color);
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffffd6;
+  background: #67df59;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1411,10 +1411,9 @@ pre .javascript .function {
   width: 100%;
 }
 .with-love {
-  color: ;
+  color: #ff0000;
   display: inline-block;
   margin: 0 5px;
-  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .powered-by,
 .theme-info {
@@ -1474,6 +1473,42 @@ pre .javascript .function {
   }
   50%, 70% {
     transform: scale(1.1);
+  }
+}
+.back-to-top {
+  font-size: 12px;
+  text-align: center;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.back-to-top {
+  background: #222;
+  bottom: -100px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  left: 30px;
+  opacity: 1;
+  padding: 0 6px;
+  position: fixed;
+  transition-property: bottom;
+  z-index: 1300;
+  width: 24px;
+}
+.back-to-top span {
+  display: none;
+}
+.back-to-top:hover {
+  color: #87daff;
+}
+.back-to-top.back-to-top-on {
+  bottom: 19px;
+}
+@media (max-width: 991px) {
+  .back-to-top {
+    left: 20px;
+    opacity: 0.8;
   }
 }
 .post-body {

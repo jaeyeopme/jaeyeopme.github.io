@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"jaeyeopme.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"jaeyeopme.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -108,14 +108,9 @@
 
 <nav class="site-nav">
   <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-about">
+        <li class="menu-item menu-item-home">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -133,6 +128,10 @@
     </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
     <main class="main">
@@ -194,9 +193,9 @@
           <span id="more"></span>
 
 <p><img src="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/1.png"></p>
-<h2 id="vim-설치"><a href="#vim-설치" class="headerlink" title="vim 설치"></a>vim 설치</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> apt update &amp;&amp; apt install -y vim</span></span><br></pre></td></tr></table></figure>
+<h2 id="vim-설치"><a href="#vim-설치" class="headerlink" title="vim 설치"></a>vim 설치</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">apt update &amp;&amp; apt install -y vim</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="my-cnf-수정"><a href="#my-cnf-수정" class="headerlink" title="my.cnf 수정"></a>my.cnf 수정</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vi /etc/mysql/my.cnf</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 아래 내용 추가</span></span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8mb4</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8mb4</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">collation-server = utf8mb4_unicode_ci</span><br><span class="line">init-connect=&#x27;SET NAMES utf8mb4&#x27;</span><br><span class="line">character-set-server = utf8mb4</span><br></pre></td></tr></table></figure>
+<h2 id="my-cnf-수정"><a href="#my-cnf-수정" class="headerlink" title="my.cnf 수정"></a>my.cnf 수정</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">vi /etc/mysql/my.cnf</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">아래 내용 추가</span></span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8mb4</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8mb4</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">collation-server = utf8mb4_unicode_ci</span><br><span class="line">init-connect=&#x27;SET NAMES utf8mb4&#x27;</span><br><span class="line">character-set-server = utf8mb4</span><br></pre></td></tr></table></figure>
 
 <p><figure><img src="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/2.png" alt="인코딩 설정 전"><figcaption class="image-caption">인코딩 설정 전</figcaption></figure></p>
 <p><figure><img src="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/3.png" alt="인코딩 설정 후"><figcaption class="image-caption">인코딩 설정 후</figcaption></figure></p>
@@ -272,7 +271,7 @@
 
 <p><img src="/posts/2021/05/17/%EB%8F%84%EC%BB%A4%EB%A1%9C-MariaDB-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0/1.png"></p>
 <h2 id="이미지-다운로드"><a href="#이미지-다운로드" class="headerlink" title="이미지 다운로드"></a>이미지 다운로드</h2><p>버전을 명시하지 않으면 <code>latest</code> 버전을 설치합니다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull mariadb:<span class="variable">$&#123;VERSION&#125;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker pull mariadb:<span class="variable">$&#123;VERSION&#125;</span></span></span><br></pre></td></tr></table></figure>
 
 <h2 id="컨테이너-생성"><a href="#컨테이너-생성" class="headerlink" title="컨테이너 생성"></a>컨테이너 생성</h2><p>컨테이너 내부에 저장된 데이터들은 컨테이너가 삭제되면 같이 삭제됩니다. 즉 <code>stateful</code> 하기 때문에 데이터의 영속성을 보장하는 <code>stateless</code> 한 설계를 위해 도커는 <code>volumes</code> 과<code> bind mounts</code> 라는 두가지 옵션을 제공합니다. <code>volumes</code> 과 <code>bind mounts</code> 의 차이는 <a target="_blank" rel="noopener" href="https://docs.docker.com/storage/volumes/">해당 글</a>에서확인해 주세요.</p>
 <blockquote>
@@ -283,11 +282,11 @@
 <li>존재하지 않는 볼륨명 입력 시 해당 볼륨명으로 볼륨이 생성됩니다.</li>
 <li>볼륨명 생략 시 해시 값으로 볼륨이 생성됩니다.</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<span class="variable">$&#123;MYSQL_ROOT_PASSWORD&#125;</span></span></span><br><span class="line">-v $&#123;VOLUME_NAME&#125;:/var/lib/mysql --name $&#123;CONTAINER_NAME&#125; mariadb</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<span class="variable">$&#123;MYSQL_ROOT_PASSWORD&#125;</span></span></span><br><span class="line">-v $&#123;VOLUME_NAME&#125;:/var/lib/mysql --name $&#123;CONTAINER_NAME&#125; mariadb</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-Use-bind-mounts"><a href="#2-Use-bind-mounts" class="headerlink" title="2. Use bind mounts"></a>2. Use bind mounts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<span class="variable">$&#123;MYSQL_ROOT_PASSWORD&#125;</span> \</span></span><br><span class="line"><span class="bash">-v <span class="variable">$&#123;HOST&#125;</span>:/var/lib/mysql --name <span class="variable">$&#123;CONTAINER_NAME&#125;</span> mariadb</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-Use-bind-mounts"><a href="#2-Use-bind-mounts" class="headerlink" title="2. Use bind mounts"></a>2. Use bind mounts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<span class="variable">$&#123;MYSQL_ROOT_PASSWORD&#125;</span> \</span></span><br><span class="line"><span class="language-bash">-v <span class="variable">$&#123;HOST&#125;</span>:/var/lib/mysql --name <span class="variable">$&#123;CONTAINER_NAME&#125;</span> mariadb</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="컨테이너-접속"><a href="#컨테이너-접속" class="headerlink" title="컨테이너 접속"></a>컨테이너 접속</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker <span class="built_in">exec</span> -it <span class="variable">$&#123;CONTAINER_NAME&#125;</span> bash</span></span><br></pre></td></tr></table></figure>
+<h2 id="컨테이너-접속"><a href="#컨테이너-접속" class="headerlink" title="컨테이너 접속"></a>컨테이너 접속</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;CONTAINER_NAME&#125;</span> bash</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="MariaDB-인코딩-설정"><a href="#MariaDB-인코딩-설정" class="headerlink" title="MariaDB 인코딩 설정"></a>MariaDB 인코딩 설정</h2><p>MariaDB 인코딩 설정은 <a href="https://jaeyeopme.github.io/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">해당 글</a>에서 확인해 주세요.</p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
@@ -430,7 +429,7 @@
 </tbody></table>
 <h2 id="Fenced-Code-Block"><a href="#Fenced-Code-Block" class="headerlink" title="Fenced Code Block"></a>Fenced Code Block</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```json</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">  &quot;firstName&quot;: &quot;John&quot;,</span></span><br><span class="line"><span class="code">  &quot;lastName&quot;: &quot;Smith&quot;,</span></span><br><span class="line"><span class="code">  &quot;age&quot;: 25</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;firstName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;John&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;lastName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Smith&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;age&quot;</span><span class="punctuation">:</span> <span class="number">25</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><ul>
 <li>예시 없음</li>
@@ -506,6 +505,62 @@
 </script>
 
         </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">devlog</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
       </div>
     </main>
 
@@ -520,10 +575,12 @@
   &copy; 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
-    <i class="fa fa-fire"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">devlog</span>
 </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
 
         
 
@@ -540,7 +597,6 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -554,65 +610,6 @@
 
 <script src="/js/next-boot.js"></script>
 
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '.languages',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (element.id) {
-      script.id = element.id;
-    }
-    if (element.className) {
-      script.className = element.className;
-    }
-    if (element.type) {
-      script.type = element.type;
-    }
-    if (element.src) {
-      script.src = element.src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
-    }
-    if (element.dataset.pjax !== undefined) {
-      script.dataset.pjax = '';
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
 
 
 
@@ -632,11 +629,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
-    <div id="pjax">
   
 
   
 
-    </div>
 </body>
 </html>
