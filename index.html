@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 6.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -146,6 +146,78 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="devlog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="devlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/" class="post-title-link" itemprop="url">Embeded 트래킹 실패</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-05-24 18:50:00" itemprop="dateCreated datePublished" datetime="2022-05-24T18:50:00+09:00">2022-05-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-06-03 00:16:22" itemprop="dateModified" datetime="2022-06-03T00:16:22+09:00">2022-06-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -192,14 +264,19 @@
 
       
           <span id="more"></span>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+
+<p><img src="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/1.png"></p>
+<h2 id="vim-설치"><a href="#vim-설치" class="headerlink" title="vim 설치"></a>vim 설치</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> apt update &amp;&amp; apt install -y vim</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="my-cnf-수정"><a href="#my-cnf-수정" class="headerlink" title="my.cnf 수정"></a>my.cnf 수정</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vi /etc/mysql/my.cnf</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 아래 내용 추가</span></span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8mb4</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8mb4</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">collation-server = utf8mb4_unicode_ci</span><br><span class="line">init-connect=&#x27;SET NAMES utf8mb4&#x27;</span><br><span class="line">character-set-server = utf8mb4</span><br></pre></td></tr></table></figure>
+
+<p><figure><img src="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/2.png" alt="인코딩 설정 전"><figcaption class="image-caption">인코딩 설정 전</figcaption></figure></p>
+<p><figure><img src="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/3.png" alt="인코딩 설정 후"><figcaption class="image-caption">인코딩 설정 후</figcaption></figure></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://mariadb.com/kb/en/setting-character-sets-and-collations/">https://mariadb.com/kb/en/setting-character-sets-and-collations/</a></li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/oldbeedev/mysql-utf8mb4-character-set-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-da7624958624/">https://medium.com/oldbeedev/mysql-utf8mb4-character-set-설정하기-da7624958624/</a></li>
+</ul>
+
       
     </div>
 
@@ -264,14 +341,33 @@
 
       
           <span id="more"></span>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2021/05/17/%EB%8F%84%EC%BB%A4%EB%A1%9C-MariaDB-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+
+<p><img src="/posts/2021/05/17/%EB%8F%84%EC%BB%A4%EB%A1%9C-MariaDB-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0/1.png"></p>
+<h2 id="이미지-다운로드"><a href="#이미지-다운로드" class="headerlink" title="이미지 다운로드"></a>이미지 다운로드</h2><p>버전을 명시하지 않으면 <code>latest</code> 버전을 설치합니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull mariadb:<span class="variable">$&#123;VERSION&#125;</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="컨테이너-생성"><a href="#컨테이너-생성" class="headerlink" title="컨테이너 생성"></a>컨테이너 생성</h2><p>컨테이너 내부에 저장된 데이터들은 컨테이너가 삭제되면 같이 삭제됩니다. 즉 <code>stateful</code> 하기 때문에 데이터의 영속성을 보장하는 <code>stateless</code> 한 설계를 위해 도커는 <code>volumes</code> 과<code> bind mounts</code> 라는 두가지 옵션을 제공합니다. <code>volumes</code> 과 <code>bind mounts</code> 의 차이는 <a target="_blank" rel="noopener" href="https://docs.docker.com/storage/volumes/">해당 글</a>에서확인해 주세요.</p>
+<blockquote>
+<p><code>MYSQL_ROOT_PASSWORD</code> 는 필수 환경 변수 입니다.</p>
+<p><code>docker logs $&#123;CONTAINER_NAME&#125;</code> 명령어로 컨테이너 로그를 확인해주세요.</p>
+</blockquote>
+<h3 id="1-Use-volumes"><a href="#1-Use-volumes" class="headerlink" title="1. Use volumes"></a>1. Use volumes</h3><ul>
+<li>존재하지 않는 볼륨명 입력 시 해당 볼륨명으로 볼륨이 생성됩니다.</li>
+<li>볼륨명 생략 시 해시 값으로 볼륨이 생성됩니다.</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<span class="variable">$&#123;MYSQL_ROOT_PASSWORD&#125;</span></span></span><br><span class="line">-v $&#123;VOLUME_NAME&#125;:/var/lib/mysql --name $&#123;CONTAINER_NAME&#125; mariadb</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Use-bind-mounts"><a href="#2-Use-bind-mounts" class="headerlink" title="2. Use bind mounts"></a>2. Use bind mounts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<span class="variable">$&#123;MYSQL_ROOT_PASSWORD&#125;</span> \</span></span><br><span class="line"><span class="bash">-v <span class="variable">$&#123;HOST&#125;</span>:/var/lib/mysql --name <span class="variable">$&#123;CONTAINER_NAME&#125;</span> mariadb</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="컨테이너-접속"><a href="#컨테이너-접속" class="headerlink" title="컨테이너 접속"></a>컨테이너 접속</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker <span class="built_in">exec</span> -it <span class="variable">$&#123;CONTAINER_NAME&#125;</span> bash</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="MariaDB-인코딩-설정"><a href="#MariaDB-인코딩-설정" class="headerlink" title="MariaDB 인코딩 설정"></a>MariaDB 인코딩 설정</h2><p>MariaDB 인코딩 설정은 <a href="https://jaeyeopme.github.io/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">해당 글</a>에서 확인해 주세요.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://mariadb.com/kb/en/installing-and-using-mariadb-via-docker/">https://mariadb.com/kb/en/installing-and-using-mariadb-via-docker/</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.docker.com/storage/bind-mounts/">https://docs.docker.com/storage/bind-mounts/</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.docker.com/storage/volumes/">https://docs.docker.com/storage/volumes/</a></li>
+</ul>
+
       
     </div>
 
@@ -336,14 +432,107 @@
 
       
           <span id="more"></span>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2021/05/13/Markdown-%EB%AC%B8%EB%B2%95/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+
+<p><img src="/posts/2021/05/13/Markdown-%EB%AC%B8%EB%B2%95/1.png"></p>
+<h2 id="Heading"><a href="#Heading" class="headerlink" title="Heading"></a>Heading</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### H4</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### H5</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### H6</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><h2 id="Bold"><a href="#Bold" class="headerlink" title="Bold"></a>Bold</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**bold text**</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>bold text</strong></p>
+<h2 id="Italic"><a href="#Italic" class="headerlink" title="Italic"></a>Italic</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">_italicized text_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>italicized text</em></p>
+<h2 id="Strikethrough"><a href="#Strikethrough" class="headerlink" title="Strikethrough"></a>Strikethrough</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~The world is flat.~~</span><br></pre></td></tr></table></figure>
+
+<p><del>The world is flat.</del></p>
+<h2 id="Emoji"><a href="#Emoji" class="headerlink" title="Emoji"></a>Emoji</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">:kissing<span class="emphasis">_closed_</span>eyes:</span><br><span class="line">:satisfied:</span><br><span class="line">:stuck<span class="emphasis">_out_</span>tongue<span class="emphasis">_winking_</span>eye:</span><br></pre></td></tr></table></figure>
+
+<p>:kissing_closed_eyes:<br>:satisfied:<br>:stuck_out_tongue_winking_eye:</p>
+<h2 id="Blockquote"><a href="#Blockquote" class="headerlink" title="Blockquote"></a>Blockquote</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; blockquote1</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt; &gt; blockquote2</span></span><br><span class="line"><span class="quote">&gt; &gt;</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; blockquote3</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>blockquote1</p>
+<blockquote>
+<p>Blockquote2</p>
+<blockquote>
+<p>blockquote3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="Ordered-List"><a href="#Ordered-List" class="headerlink" title="Ordered List"></a>Ordered List</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> First item</span><br><span class="line"><span class="bullet">2.</span> Second item</span><br><span class="line"><span class="bullet">3.</span> Third item</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h2 id="Unordered-List"><a href="#Unordered-List" class="headerlink" title="Unordered List"></a>Unordered List</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> First item</span><br><span class="line"><span class="bullet">-</span> Second item</span><br><span class="line"><span class="bullet">-</span> Third item</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">`code`</span></span><br></pre></td></tr></table></figure>
+
+<p><code>code</code></p>
+<h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">title</span>](<span class="link">https://www.example.com</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.example.com/">title</a></p>
+<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt text</span>](<span class="link">image.png</span>)&#123;: width=&quot;50%&quot; height=&quot;50&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><figure><img src="/posts/2021/05/13/Markdown-%EB%AC%B8%EB%B2%95/1.png" alt="alt text"><figcaption class="image-caption">alt text</figcaption></figure></p>
+<h2 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| Default | Left | Center | Right |</span><br><span class="line">| ------- | :--- | :----: | ----: |</span><br><span class="line">| Text    | Text |  Text  |  Text |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Default</th>
+<th align="left">Left</th>
+<th align="center">Center</th>
+<th align="right">Right</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Text</td>
+<td align="left">Text</td>
+<td align="center">Text</td>
+<td align="right">Text</td>
+</tr>
+</tbody></table>
+<h2 id="Fenced-Code-Block"><a href="#Fenced-Code-Block" class="headerlink" title="Fenced Code Block"></a>Fenced Code Block</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```json</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">  &quot;firstName&quot;: &quot;John&quot;,</span></span><br><span class="line"><span class="code">  &quot;lastName&quot;: &quot;Smith&quot;,</span></span><br><span class="line"><span class="code">  &quot;age&quot;: 25</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;firstName&quot;</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;lastName&quot;</span>: <span class="string">&quot;Smith&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;age&quot;</span>: <span class="number">25</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><ul>
+<li>예시 없음</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="Footnote"><a href="#Footnote" class="headerlink" title="Footnote"></a>Footnote</h2><ul>
+<li>예시 없음</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Here&#x27;s a sentence with a footnote.</span><br><span class="line">[^1]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Heading-ID"><a href="#Heading-ID" class="headerlink" title="Heading ID"></a>Heading ID</h2><ul>
+<li>예시 없음</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># My Great Heading &#123;#custom-id&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Definition-List"><a href="#Definition-List" class="headerlink" title="Definition List"></a>Definition List</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">term</span><br><span class="line">:definition</span><br></pre></td></tr></table></figure>
+
+<dl><dt>term</dt><dd>definition</dd></dl><h2 id="Task-List"><a href="#Task-List" class="headerlink" title="Task List"></a>Task List</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> [x] Write the press release</span><br><span class="line"><span class="bullet">-</span> [ ] Update the website</span><br><span class="line"><span class="bullet">-</span> [ ] Contact the media</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Write the press release</li>
+<li><input disabled="" type="checkbox"> Update the website</li>
+<li><input disabled="" type="checkbox"> Contact the media</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.markdownguide.org/cheat-sheet">https://www.markdownguide.org/cheat-sheet</a></li>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/rxaviers/7360908">https://gist.github.com/rxaviers/7360908</a></li>
+</ul>
+
       
     </div>
 
@@ -401,7 +590,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-fire"></i>
   </span>
