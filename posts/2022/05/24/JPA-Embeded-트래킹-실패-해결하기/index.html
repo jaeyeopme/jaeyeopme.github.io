@@ -21,33 +21,32 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"jaeyeopme.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="Embeded 트래킹 실패">
-<meta property="og:url" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/index.html">
+<meta property="og:title" content="JPA Embeded 트래킹 실패 해결하기">
+<meta property="og:url" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/index.html">
 <meta property="og:site_name" content="devlab">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/1.png">
-<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/2.png">
-<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/3.png">
-<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/4.png">
-<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/5.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/1.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/2.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/3.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/5.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/4.png">
 <meta property="article:published_time" content="2022-05-24T09:50:00.000Z">
-<meta property="article:modified_time" content="2022-06-03T04:54:10.371Z">
+<meta property="article:modified_time" content="2022-06-03T12:46:36.837Z">
 <meta property="article:author" content="devlab">
 <meta property="article:tag" content="JPA">
-<meta property="article:tag" content="JPA Annotation">
 <meta property="article:tag" content="Problem solving">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/1.png">
+<meta name="twitter:image" content="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/1.png">
 
 
-<link rel="canonical" href="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/">
+<link rel="canonical" href="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/","path":"posts/2022/05/24/Embeded-트래킹-실패/","title":"Embeded 트래킹 실패"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/","path":"posts/2022/05/24/JPA-Embeded-트래킹-실패-해결하기/","title":"JPA Embeded 트래킹 실패 해결하기"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Embeded 트래킹 실패 | devlab</title>
+<title>JPA Embeded 트래킹 실패 해결하기 | devlab</title>
   
 
 
@@ -91,7 +90,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">4</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">8</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">5</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">9</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
   </ul>
 </nav>
 
@@ -119,7 +118,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/">
+    <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -132,12 +131,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Embeded 트래킹 실패 | devlab">
+      <meta itemprop="name" content="JPA Embeded 트래킹 실패 해결하기 | devlab">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Embeded 트래킹 실패
+          JPA Embeded 트래킹 실패 해결하기
         </h1>
 
         <div class="post-meta-container">
@@ -162,15 +161,13 @@
     
     <div class="post-body" itemprop="articleBody">
         <p><escape><span id="more"></span></escape></p>
-<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p><code>@Embeddable</code> 객체 내부 <code>@ManyToMany</code>  <code>mappedBy</code> 설정에서 연관관계 주인 필드 트래킹 실패.</p>
-<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/1.png"></p>
-<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/2.png"></p>
-<p><figure><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/3.png" alt="연관관계의 주인을 설정하기 위해 `mappedBy` 설정에서 연관관계 주인 필드 트래킹 실패"><figcaption class="image-caption">연관관계의 주인을 설정하기 위해 `mappedBy` 설정에서 연관관계 주인 필드 트래킹 실패</figcaption></figure></p>
-<p>연관관계의 주인을 설정하기 위해 <code>mappedBy</code> 설정에서 연관관계 주인 필드 트래킹 실패</p>
-<h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p><code>mappedBy</code> 속성을 <code>embedded.embeddable</code> 형식으로 지정.</p>
-<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/4.png"></p>
-<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/5.png"></p>
-<p>하지만, IDE 에서는 여전히 트래킹 실패.</p>
+<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p><code>@Embeddable</code> 객체 내부에 <code>@ManyToMany</code> 로 연관관계 매핑 중 <code>mappedBy</code> 설정에서 연관관계 주인 필드를 트래킹에 실패하는 문제가 발생했다.</p>
+<p><figure><img src="/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/1.png" alt="@Embeddable 객체 내부 모습"><figcaption class="image-caption">@Embeddable 객체 내부 모습</figcaption></figure></p>
+<p><figure><img src="/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/2.png" alt="JPA EntityManagerFactory 트래킹 실패"><figcaption class="image-caption">JPA EntityManagerFactory 트래킹 실패</figcaption></figure></p>
+<p><figure><img src="/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/3.png" alt="IDE 트래킹 실패"><figcaption class="image-caption">IDE 트래킹 실패</figcaption></figure></p>
+<h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p><code>mappedBy</code> 속성을 <code>embedded.embeddable</code> 형식으로 지정하여 <code>JPA EntityManagerFactory</code>는 주인 필드를 트래킹에 성공하며 문제를 해결했다.</p>
+<p><figure><img src="/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/5.png" alt="IDE 에서는 여전히 트래킹 실패."><figcaption class="image-caption">IDE 에서는 여전히 트래킹 실패.</figcaption></figure></p>
+<p><figure><img src="/posts/2022/05/24/JPA-Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/4.png" alt="정상적으로 엔티티가 매핑 된 모습"><figcaption class="image-caption">정상적으로 엔티티가 매핑 된 모습</figcaption></figure></p>
 
     </div>
 
@@ -181,7 +178,6 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/JPA/" rel="tag"><i class="fa fa-tag"></i> JPA</a>
-              <a href="/tags/JPA-Annotation/" rel="tag"><i class="fa fa-tag"></i> JPA Annotation</a>
               <a href="/tags/Problem-solving/" rel="tag"><i class="fa fa-tag"></i> Problem solving</a>
           </div>
 
@@ -189,11 +185,14 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="prev" title="Mariadb 인코딩 설정하기">
-                  <i class="fa fa-chevron-left"></i> Mariadb 인코딩 설정하기
+                <a href="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="prev" title="MariaDB 인코딩 설정하기">
+                  <i class="fa fa-chevron-left"></i> MariaDB 인코딩 설정하기
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/posts/2022/06/03/%EC%84%9C%EB%B2%84-%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81/" rel="next" title="서버 스케일링이란">
+                  서버 스케일링이란 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
