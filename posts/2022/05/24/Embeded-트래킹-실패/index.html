@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"jaeyeopme.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="Embeded 트래킹 실패">
+<meta property="og:url" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/index.html">
+<meta property="og:site_name" content="devlab">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/1.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/2.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/3.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/4.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/5.png">
+<meta property="article:published_time" content="2022-05-24T09:50:00.000Z">
+<meta property="article:modified_time" content="2022-06-03T04:54:10.371Z">
+<meta property="article:author" content="devlab">
+<meta property="article:tag" content="JPA">
+<meta property="article:tag" content="JPA Annotation">
+<meta property="article:tag" content="Problem solving">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/1.png">
+
+
+<link rel="canonical" href="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/","path":"posts/2022/05/24/Embeded-트래킹-실패/","title":"Embeded 트래킹 실패"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Embeded 트래킹 실패 | devlab</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">devlab</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">4</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">8</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="devlab">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="devlab">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Embeded 트래킹 실패 | devlab">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Embeded 트래킹 실패
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-05-24 18:50:00" itemprop="dateCreated datePublished" datetime="2022-05-24T18:50:00+09:00">2022-05-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><escape><span id="more"></span></escape></p>
+<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p><code>@Embeddable</code> 객체 내부 <code>@ManyToMany</code>  <code>mappedBy</code> 설정에서 연관관계 주인 필드 트래킹 실패.</p>
+<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/1.png"></p>
+<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/2.png"></p>
+<p><figure><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/3.png" alt="연관관계의 주인을 설정하기 위해 `mappedBy` 설정에서 연관관계 주인 필드 트래킹 실패"><figcaption class="image-caption">연관관계의 주인을 설정하기 위해 `mappedBy` 설정에서 연관관계 주인 필드 트래킹 실패</figcaption></figure></p>
+<p>연관관계의 주인을 설정하기 위해 <code>mappedBy</code> 설정에서 연관관계 주인 필드 트래킹 실패</p>
+<h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p><code>mappedBy</code> 속성을 <code>embedded.embeddable</code> 형식으로 지정.</p>
+<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/4.png"></p>
+<p><img src="/posts/2022/05/24/Embeded-%ED%8A%B8%EB%9E%98%ED%82%B9-%EC%8B%A4%ED%8C%A8/5.png"></p>
+<p>하지만, IDE 에서는 여전히 트래킹 실패.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/JPA/" rel="tag"><i class="fa fa-tag"></i> JPA</a>
+              <a href="/tags/JPA-Annotation/" rel="tag"><i class="fa fa-tag"></i> JPA Annotation</a>
+              <a href="/tags/Problem-solving/" rel="tag"><i class="fa fa-tag"></i> Problem solving</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/2021/05/17/MariaDB-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="prev" title="Mariadb 인코딩 설정하기">
+                  <i class="fa fa-chevron-left"></i> Mariadb 인코딩 설정하기
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-vial"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">devlab</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
