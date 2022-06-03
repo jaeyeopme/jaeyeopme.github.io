@@ -21,29 +21,28 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"jaeyeopme.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="서버 스케일링이란">
-<meta property="og:url" content="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81/index.html">
+<meta property="og:title" content="서버 Scaling이란">
+<meta property="og:url" content="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/index.html">
 <meta property="og:site_name" content="devlab">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jaeyeopme.github.io/1.png">
-<meta property="og:image" content="http://jaeyeopme.github.io/2.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/1.png">
+<meta property="og:image" content="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/2.png">
 <meta property="article:published_time" content="2022-06-03T07:37:17.000Z">
-<meta property="article:modified_time" content="2022-06-03T12:46:36.837Z">
+<meta property="article:modified_time" content="2022-06-03T14:40:26.071Z">
 <meta property="article:author" content="devlab">
 <meta property="article:tag" content="Architecture">
-<meta property="article:tag" content="Scaling">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jaeyeopme.github.io/1.png">
+<meta name="twitter:image" content="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/1.png">
 
 
-<link rel="canonical" href="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81/">
+<link rel="canonical" href="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81/","path":"posts/2022/06/03/서버-스케일링/","title":"서버 스케일링이란"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/","path":"posts/2022/06/03/서버-Scaling이란/","title":"서버 Scaling이란"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>서버 스케일링이란 | devlab</title>
+<title>서버 Scaling이란 | devlab</title>
   
 
 
@@ -87,7 +86,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">5</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">9</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">5</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">8</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
   </ul>
 </nav>
 
@@ -115,7 +114,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81/">
+    <link itemprop="mainEntityOfPage" href="http://jaeyeopme.github.io/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -128,12 +127,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="서버 스케일링이란 | devlab">
+      <meta itemprop="name" content="서버 Scaling이란 | devlab">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          서버 스케일링이란
+          서버 Scaling이란
         </h1>
 
         <div class="post-meta-container">
@@ -160,7 +159,7 @@
         <p><escape><span id="more"></span></escape></p>
 <h2 id="소개"><a href="#소개" class="headerlink" title="소개"></a>소개</h2><p>대규모 서비스를 운영할 때 대용량 트래픽을 부하 분산하기 위해 사용되는 시스템의 확장 방식인 <strong>스케일 업</strong>과 <strong>스케일 아웃</strong>에 대해 알아본다.</p>
 <h2 id="스케일-업-Scale-Up"><a href="#스케일-업-Scale-Up" class="headerlink" title="스케일 업 (Scale Up)"></a>스케일 업 (Scale Up)</h2><p>스케일 업이란 기존 서버를 보다 높은 사양으로 CPU 나 RAM 등과 같이 하드웨어를 업그레이드하여 한대의 단일 서버가 부하를 처리할 수 있게하는 확장 방식이다.<br>한대의 단일 서버의 성능을 증강하기 때문에 스케일 업을 (수직 스케일 - Vertical Scaling) 이라고 부르기도 한다.</p>
-<p><figure><img src="/1.png" alt="더 큰 서버로 확장"><figcaption class="image-caption">더 큰 서버로 확장</figcaption></figure></p>
+<p><figure><img src="/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/1.png" alt="더 큰 서버로 확장"><figcaption class="image-caption">더 큰 서버로 확장</figcaption></figure></p>
 <h3 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h3><ul>
 <li>단일 서버이기 때문에 소프트웨어 라이선스 비용이나 운영 비용이 적다.</li>
 <li>데이터 정합성 이슈에서 자유롭다.</li>
@@ -172,7 +171,7 @@
 <li>장애 발생 시 서버가 다운되었을 경우 복구되기 전까지 서비스를 중단해야하는 상황이 발생할 수 있다.</li>
 </ul>
 <h2 id="스케일-아웃-Sclae-Out"><a href="#스케일-아웃-Sclae-Out" class="headerlink" title="스케일 아웃 (Sclae Out)"></a>스케일 아웃 (Sclae Out)</h2><p>스케일 아웃이란 기존 서버와 같거나 비슷한 사양의 서버를 여러대 추가하여 <strong>로드 밸런서</strong>를 이용하여 여러 대의 서버가 부하를 처리할 수 있게하는 확장 방식이다.<br>여러대의 서버를 사용하기 때문에 스케일 아웃을 (수평 스케일 - Horizontal Scaling) 이라고 부르기도 한다.</p>
-<p><figure><img src="/2.png" alt="여러 대의 서버로 확장"><figcaption class="image-caption">여러 대의 서버로 확장</figcaption></figure></p>
+<p><figure><img src="/posts/2022/06/03/%EC%84%9C%EB%B2%84-Scaling%EC%9D%B4%EB%9E%80/2.png" alt="여러 대의 서버로 확장"><figcaption class="image-caption">여러 대의 서버로 확장</figcaption></figure></p>
 <h3 id="장점-1"><a href="#장점-1" class="headerlink" title="장점"></a>장점</h3><ul>
 <li>일반적으로 저렴한 서버를 사용하므로 성능 증가에 따른 비용 부담이 적다.</li>
 <li>여러대의 서버이기 때문에 장애가 발생하더라도 다른 노드에서 처리하는 방식으로 가용성을 높일 수 있다.</li>
@@ -198,7 +197,6 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Architecture/" rel="tag"><i class="fa fa-tag"></i> Architecture</a>
-              <a href="/tags/Scaling/" rel="tag"><i class="fa fa-tag"></i> Scaling</a>
           </div>
 
         
