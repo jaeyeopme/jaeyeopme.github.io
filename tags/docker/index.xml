@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on Jaeyeop&#39;s Notes</title>
+    <link>https://jaeyeopme.github.io/tags/docker/</link>
+    <description>Recent content in Docker on Jaeyeop&#39;s Notes</description>
+    <image>
+      <title>Jaeyeop&#39;s Notes</title>
+      <url>https://jaeyeopme.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jaeyeopme.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 May 2021 21:52:00 +0000</lastBuildDate><atom:link href="https://jaeyeopme.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MariaDB 컨테이너 환경 구성</title>
+      <link>https://jaeyeopme.github.io/posts/%EB%8F%84%EC%BB%A4%EB%A1%9C-mariadb-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Mon, 17 May 2021 21:52:00 +0000</pubDate>
+      
+      <guid>https://jaeyeopme.github.io/posts/%EB%8F%84%EC%BB%A4%EB%A1%9C-mariadb-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0/</guid>
+      <description>이미지 다운로드 버전을 명시하지 않으면 latest 버전이 설치된다.
+1 $ docker pull mariadb:${VERSION} 컨테이너 생성 컨테이너 내부에 저장된 데이터들은 컨테이너가 삭제된다면 같이 삭제된다. 즉 stateful 하기 때문에 데이터의 영속성을 보장하는 stateless 한 설계를 위해 Docker 는 volumes 과 bind mounts 라는 두가지 옵션을 제공한다.
+volumes 와 bind mounts 의 차이
+1. Use volumes 존재하지 않는 볼륨명 입력 시 입력된 볼륨명으로 볼륨이 생성되고, 생략 시 해시 값으로 볼륨이 생성된다.
+MYSQL_ROOT_PASSWORD 는 필수 환경 변수 이며, 컨테이너 실행 실패 시 docker logs ${CONTAINER_NAME} 명령어로 내부 로그를 확인할 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>
